@@ -15,6 +15,7 @@ const reducer = (state = initialState, { type, payload }) => {
           ],
         };
       }
+      return { ...state };
       break;
     case "DELETE_CONTACT":
       return {
